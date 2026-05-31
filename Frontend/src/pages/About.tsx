@@ -1,0 +1,63 @@
+import { Award, Book, Target, Users } from 'lucide-react';
+
+const About = () => {
+  return (
+    <div className="min-h-screen bg-gray-50">
+     
+      <div className="relative py-16 bg-indigo-600">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+          <h1 className="text-4xl font-bold mb-4">About EduQuest</h1>
+          <p className="text-xl max-w-2xl mx-auto">
+            We're revolutionizing the way students take exams with our innovative online platform.
+          </p>
+        </div>
+      </div>
+
+      <div className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="lg:text-center">
+            <Target className="mx-auto h-12 w-12 text-indigo-600" />
+            <h2 className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl">
+              Our Mission
+            </h2>
+            <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+              To provide a seamless and secure online examination experience that empowers both students
+              and educators in their academic journey.
+            </p>
+          </div>
+
+          <div className="mt-16">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <Book className="h-8 w-8 text-indigo-600 mb-4" />
+                <h3 className="text-xl font-medium text-gray-900">Quality Education</h3>
+                <p className="mt-2 text-gray-500">
+                  We believe in providing high-quality educational resources and assessment tools.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <Users className="h-8 w-8 text-indigo-600 mb-4" />
+                <h3 className="text-xl font-medium text-gray-900">Student Success</h3>
+                <p className="mt-2 text-gray-500">
+                  Our platform is designed to help students achieve their academic goals.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <Award className="h-8 w-8 text-indigo-600 mb-4" />
+                <h3 className="text-xl font-medium text-gray-900">Excellence</h3>
+                <p className="mt-2 text-gray-500">
+                  We strive for excellence in everything we do, from platform stability to user experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  );
+};
+
+export default About;
